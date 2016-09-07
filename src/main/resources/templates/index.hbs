@@ -1,0 +1,20 @@
+{{#partial "content"}}
+    <div class="container">
+        <div class="entry-list">
+            {{#if blogPosts}}
+                {{#each blogPosts}}
+                    <article>
+                        <h2><a href="{{this.slug}}"> {{ this.title }} </a></h2>
+                        <time datetime="{{ this.creationDate }}">{{ this.creationDate }}</time>
+                    </article>
+                {{/each}}
+            {{ else }}
+                <article>
+                    <h2> Could not find any posts. </h2>
+                </article>
+            {{/if}}
+        </div>
+    </div>
+{{/partial}}
+
+{{> base.hbs }}
