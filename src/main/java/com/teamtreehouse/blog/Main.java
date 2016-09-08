@@ -26,22 +26,32 @@ public class Main {
         Map<String, Object> model = new HashMap<>();
         List<String> slug = new ArrayList<>();
         slug.add(null);
-        get("/", (req, res) -> {
-            model.put("blogPosts", dao.findAllEntries());
-            return new ModelAndView(model, "index.hbs");
-        }, new HandlebarsTemplateEngine());
 
         before("/new", (req, res) -> {
             if (req.cookie("admin") == null || !req.cookie("admin").equals("admin")) {
                 res.redirect("/log-in");
+                halt();
             }
         });
 
-        before("/edit", (req, res) -> {
+        before("/:slug/delete", (req, res) -> {
             if (req.cookie("admin") == null || !req.cookie("admin").equals("admin")) {
                 res.redirect("/log-in");
+                halt();
             }
         });
+
+        before("/:slug/edit", (req, res) -> {
+            if (req.cookie("admin") == null || !req.cookie("admin").equals("admin")) {
+                res.redirect("/log-in");
+                halt();
+            }
+        });
+
+        get("/", (req, res) -> {
+            model.put("blogPosts", dao.findAllEntries());
+            return new ModelAndView(model, "index.hbs");
+        }, new HandlebarsTemplateEngine());
 
         get("/new", (req, res) -> new ModelAndView(model, "new.hbs"), new HandlebarsTemplateEngine());
 
@@ -64,7 +74,7 @@ public class Main {
             res.redirect("/");
             return null;
         });
-        
+
         get("/cancel", (req, res) -> {
             res.redirect("/");
             return null;

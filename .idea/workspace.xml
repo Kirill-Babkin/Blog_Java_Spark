@@ -4,11 +4,7 @@
     <list default="true" id="f9d0e30b-1b82-46ef-9277-06ea6a7f72aa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/teamtreehouse/blog/Main.class" afterPath="$PROJECT_DIR$/build/classes/main/com/teamtreehouse/blog/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/teamtreehouse/blog/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/teamtreehouse/blog/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/teamtreehouse/blog/model/BlogEntry.java" afterPath="$PROJECT_DIR$/src/main/java/com/teamtreehouse/blog/model/BlogEntry.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/public/css/site.css" afterPath="$PROJECT_DIR$/src/main/resources/public/css/site.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/detail.hbs" afterPath="$PROJECT_DIR$/src/main/resources/templates/detail.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/edit.hbs" afterPath="$PROJECT_DIR$/src/main/resources/templates/edit.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/new.hbs" afterPath="$PROJECT_DIR$/src/main/resources/templates/new.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/log-in.hbs" afterPath="$PROJECT_DIR$/src/main/resources/templates/log-in.hbs" />
     </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,11 +58,11 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/teamtreehouse/blog/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1122">
-              <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
+            <state relative-caret-position="493">
+              <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1694#1702#0" expanded="true" />
+                <element signature="e#1976#1984#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -149,8 +145,8 @@
       <file leaf-file-name="log-in.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/log-in.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="57" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="57" />
+            <state relative-caret-position="136">
+              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -490,7 +486,6 @@
       <list>
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/com/teamtreehouse/blog/model/NotFoundException.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/log-in.hbs" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.hbs" />
         <option value="$PROJECT_DIR$/src/main/java/com/teamtreehouse/blog/model/Comment.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/base.hbs" />
@@ -501,6 +496,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/public/css/site.css" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/new.hbs" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/edit.hbs" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/log-in.hbs" />
         <option value="$PROJECT_DIR$/src/main/java/com/teamtreehouse/blog/Main.java" />
       </list>
     </option>
@@ -1208,12 +1204,12 @@
       <workItem from="1473179230825" duration="14932000" />
       <workItem from="1473212660917" duration="733000" />
       <workItem from="1473266569369" duration="17503000" />
-      <workItem from="1473301748443" duration="6173000" />
+      <workItem from="1473301748443" duration="7014000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39341000" />
+    <option name="totallyTimeSpent" value="40182000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1275,7 +1271,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1694#1702#0" expanded="true" />
+            <element signature="e#1976#1984#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1318,7 +1314,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1694#1702#0" expanded="true" />
+            <element signature="e#1976#1984#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1387,7 +1383,7 @@
           <caret line="58" column="11" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1694#1702#0" expanded="true" />
+            <element signature="e#1976#1984#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1539,14 +1535,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/log-in.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="57" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1600,14 +1588,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/detail.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/edit.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1616,13 +1596,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/detail.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/log-in.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/teamtreehouse/blog/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
+        <state relative-caret-position="493">
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1694#1702#0" expanded="true" />
+            <element signature="e#1976#1984#0" expanded="true" />
           </folding>
         </state>
       </provider>
