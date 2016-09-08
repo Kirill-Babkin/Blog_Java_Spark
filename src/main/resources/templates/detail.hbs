@@ -7,7 +7,8 @@
                     <time datetime="{{ post.creationDate}}">{{ post.creationDate}}</time>
                     <div class="entry">
                         <p>{{ post.post }}</p>
-                        <p><a class="link" href="edit.html">Edit Entry</a></p>
+                        <p class="edit-delete"><a class="link" href="/{{post.slug}}/edit">Edit Entry</a></p>
+                        <p class="edit-delete"><a class="link" href="/{{post.slug}}/delete">Delete Entry</a></p>
                     </div>
                 </article>
             </div>
@@ -37,4 +38,4 @@
 
 {{/partial}}
 
-{{> base.hbs}}
+{{>base.hbs}}

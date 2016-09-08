@@ -211,7 +211,10 @@ a.link {
 /* ==========================================================================
    Form Styles
    ========================================================================== */
-
+.edit-delete {
+	display: inline-block;
+	margin-right: 50px;
+}
 
 .entry-comments form {
 	border-top: 1px solid #c1c1c1;

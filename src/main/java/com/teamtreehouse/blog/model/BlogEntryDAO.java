@@ -33,4 +33,9 @@ public class BlogEntryDAO implements BlogDao {
                     .findFirst()
                     .orElseThrow(NotFoundException::new);
     }
+
+    @Override
+    public boolean removeEntry(BlogEntry blogEntry) {
+        return blogEntries.remove(blogEntry);
+    }
 }
