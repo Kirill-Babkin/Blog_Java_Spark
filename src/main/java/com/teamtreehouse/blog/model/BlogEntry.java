@@ -14,7 +14,7 @@ public class BlogEntry {
     private String slug;
 
     private List<Comment> blogComments;
-
+    private List<String> tags;
 
     public BlogEntry(String title, String post, String creator){
         this.title = title;
@@ -27,24 +27,8 @@ public class BlogEntry {
         blogComments = new ArrayList<>();
     }
 
-    public String getSlug() {
-        return slug;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public String getPost() {
-            return post;
-    }
-
-    public String getCreator() {
-        return creator;
-    }
-
-    public List<Comment> getBlogComments() {
-        return blogComments;
+    public void setTags(List<String> tags) {
+        this.tags = tags;
     }
 
     public void setTitle(String title) {
@@ -59,13 +43,38 @@ public class BlogEntry {
         this.creator = creator;
     }
 
+    public List<Comment> getBlogComments() {
+        return blogComments;
+    }
+
     public String getCreationDate() {
         return creationDate.toString();
+    }
+
+    public List<String> getTags() {
+        return tags;
+    }
+
+    public String getSlug() {
+        return slug;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getPost() {
+        return post;
+    }
+
+    public String getCreator() {
+        return creator;
     }
 
     public boolean addComment(Comment comment) {
         return blogComments.add(comment);
     }
+
 
     @Override
     public boolean equals(Object o) {

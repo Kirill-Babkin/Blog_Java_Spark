@@ -50,8 +50,26 @@ public class Main {
         post("/new", (req, res) -> {
             String title = req.queryParams("title");
             String post = req.queryParams("entry");
+            List<String> tags = new ArrayList<String>();
             BlogEntry blogEntry = new BlogEntry(title, post, "user");
+            System.out.println(req.queryParams("tags"));
+            if(!req.queryParams("tags").equals("")){
+                for(String tag : req.queryParams("tags").split(" ")){
+                    System.out.println(tag);
+                    tags.add(tag);
+                }
+                blogEntry.setTags(tags);
+            }
             dao.addEntry(blogEntry);
+            res.redirect("/");
+            return null;
+        });
+        
+        get("/cancel", (req, res) -> {
+            res.redirect("/");
+            return null;
+        });
+        get("/:slug/cancel", (req, res) -> {
             res.redirect("/");
             return null;
         });
