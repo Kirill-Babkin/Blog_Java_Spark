@@ -4,6 +4,7 @@ import com.teamtreehouse.blog.model.BlogEntry;
 import com.teamtreehouse.blog.model.NotFoundException;
 
 import java.util.List;
+import java.util.Map;
 
 public interface BlogDao {
     boolean addEntry(BlogEntry blogEntry);

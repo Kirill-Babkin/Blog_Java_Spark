@@ -2,8 +2,7 @@ package com.teamtreehouse.blog.model;
 
 import com.teamtreehouse.blog.dao.BlogDao;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by Kirill on 9/6/2016.
@@ -38,4 +37,5 @@ public class BlogEntryDAO implements BlogDao {
     public boolean removeEntry(BlogEntry blogEntry) {
         return blogEntries.remove(blogEntry);
     }
+    
 }

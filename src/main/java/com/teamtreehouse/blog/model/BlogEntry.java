@@ -1,12 +1,13 @@
 package com.teamtreehouse.blog.model;
 
 import com.github.slugify.Slugify;
+import com.google.common.hash.BloomFilter;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class BlogEntry {
+public class BlogEntry implements Comparable {
     private String title;
     private String post;
     private String creator;
@@ -85,10 +86,7 @@ public class BlogEntry {
 
         if (title != null ? !title.equals(blogEntry.title) : blogEntry.title != null) return false;
         if (post != null ? !post.equals(blogEntry.post) : blogEntry.post != null) return false;
-        if (creator != null ? !creator.equals(blogEntry.creator) : blogEntry.creator != null) return false;
-        if (creationDate != null ? !creationDate.equals(blogEntry.creationDate) : blogEntry.creationDate != null)
-            return false;
-        return blogComments != null ? blogComments.equals(blogEntry.blogComments) : blogEntry.blogComments == null;
+        return creationDate != null ? creationDate.equals(blogEntry.creationDate) : blogEntry.creationDate == null;
 
     }
 
@@ -100,5 +98,11 @@ public class BlogEntry {
         result = 31 * result + (creationDate != null ? creationDate.hashCode() : 0);
         result = 31 * result + (blogComments != null ? blogComments.hashCode() : 0);
         return result;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        BlogEntry be = (BlogEntry) o;
+        return creationDate.compareTo(be.creationDate);
     }
 }

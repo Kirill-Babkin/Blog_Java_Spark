@@ -11,10 +11,7 @@ import com.teamtreehouse.blog.model.Comment;
 import spark.ModelAndView;
 import spark.template.handlebars.HandlebarsTemplateEngine;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import static spark.Spark.*;
 
@@ -49,7 +46,9 @@ public class Main {
         });
 
         get("/", (req, res) -> {
-            model.put("blogPosts", dao.findAllEntries());
+            Set<BlogEntry> blogEntries = new TreeSet<BlogEntry>(Collections.reverseOrder());
+            blogEntries.addAll(dao.findAllEntries());
+            model.put("blogPosts", blogEntries);
             return new ModelAndView(model, "index.hbs");
         }, new HandlebarsTemplateEngine());
 
